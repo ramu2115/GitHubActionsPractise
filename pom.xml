@@ -12,8 +12,11 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <!--<sonar.projectKey>GitHub-Actions-Practise</sonar.projectKey>
-    <sonar.host.url>http://localhost:9000</sonar.host.url>-->
+    <sonar.projectKey>GitHub-Actions-Practise</sonar.projectKey>
+    <sonar.host.url>http://localhost:9000</sonar.host.url>
+    <sonar.coverage.jacoco.xmlReportPaths>
+      ${project.basedir}/target/site/jacoco/jacoco.xml
+    </sonar.coverage.jacoco.xmlReportPaths>
   </properties>
 
   <dependencies>
