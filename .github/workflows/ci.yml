@@ -24,10 +24,10 @@ jobs:
       - name: Build and Test
         run: mvn clean verify
 
-#      - name: SonarQube analysis
-#        run:
-#          >
-#          mvn sonar:sonar
-#          -Dsonar.projectKey=${{ vars.SONAR_PROJECT_KEY }}
-#          -Dsonar.host.url=${{ vars.SONAR_HOST_URL }}
-#          -Dsonar.token=${{ secrets.SONAR_TOKEN }}
+      - name: SonarQube analysis
+        run:
+          >
+          mvn sonar:sonar
+          -Dsonar.projectKey=${{ vars.SONAR_PROJECT_KEY }}
+          -Dsonar.host.url=${{ vars.SONAR_HOST_URL }}
+          -Dsonar.token=${{ secrets.SONAR_TOKEN }}
