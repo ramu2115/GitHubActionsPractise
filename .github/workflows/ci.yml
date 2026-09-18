@@ -27,7 +27,4 @@ jobs:
       - name: SonarQube analysis
         run:
           >
-          mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
-          -Dsonar.projectKey=${{ vars.SONAR_PROJECT_KEY }}
-          -Dsonar.host.url=${{ vars.SONAR_HOST_URL }}
-          -Dsonar.token=${{ secrets.SONAR_TOKEN }}
+          mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=${{ vars.SONAR_PROJECT_KEY }} -Dsonar.host.url=${{ vars.SONAR_HOST_URL }} -Dsonar.token=${{ secrets.SONAR_TOKEN }}
