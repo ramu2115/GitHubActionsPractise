@@ -24,6 +24,18 @@ jobs:
       - name: Build and Test
         run: mvn clean verify
 
+      - name: Upload JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: application-jar
+          path: target/*.jar
+
+      - name: Upload JaCoCo Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: jacoco-report
+          path: target/site/jacoco/
+
       - name: Check Sonar token
         shell: powershell
         run: |
