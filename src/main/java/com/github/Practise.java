@@ -7,7 +7,7 @@ public class Practise {
         System.out.println("Welcome to Github Actions practise");
         Practise practise = new Practise();
         int sumOfTwoNumbers = practise.sumOfTwoNumbers(10, 10);
-        System.out.println("sumOfTwoNumbers....###########.."+sumOfTwoNumbers);
+        System.out.println("sumOfTwoNumbers......"+sumOfTwoNumbers);
     }
 
     public int sumOfTwoNumbers(int number1, int number2)
