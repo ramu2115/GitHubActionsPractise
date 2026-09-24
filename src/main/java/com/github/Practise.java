@@ -17,6 +17,7 @@ public class Practise {
 
     public int sumOfThreeNumbers(int number1, int number2, int number3)
     {
+        System.out.println("sumOfThreeNumbers..............");
         return number1 + number2 + number3;
     }
 
