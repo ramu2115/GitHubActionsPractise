@@ -1,5 +1,4 @@
 package com.github;
-import java.util.logging.Logger;
 
 public class Practise {
 
